@@ -24,13 +24,15 @@ function display(){
     let newhtml=' ';
     arrlocal=JSON.parse(localStorage.getItem('arr'));
     arrdatelocal=JSON.parse(localStorage.getItem('arrdate'));
-       for(let i=0;i<arrlocal.length;i++){
+    for(let i=0;i<arrlocal.length;i++){
     newhtml+=`
     <span class="task">${arrlocal[i]}</span>
     <span class="datepara">${arrdatelocal[i]}</span>
     <button class="deletebtn" onclick=" 
-    arr.splice(${i},1);
-    arrdate.splice(${i},1);
+    arrlocal.splice(${i},1);
+    arrdatelocal.splice(${i},1);
+    localStorage.setItem('arr', JSON.stringify(arrlocal));
+    localStorage.setItem('arrdate',JSON.stringify(arrdatelocal));
     display();
     ">Delete</button>
     `;
