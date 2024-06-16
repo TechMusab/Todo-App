@@ -1,0 +1,45 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main{
+    text-align: center;
+}
+.todoinput{
+    width: 150px;
+    height: 40px;
+}
+.date{
+    width: 150px;
+    height: 40px;
+}
+.addbtn{
+    background-color: rgb(9, 138, 9);
+    border: none;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+}
+.gridcontainer{
+    display: grid;
+    grid-template-columns: 150px 150px 100px;
+  column-gap: 50px;
+ margin-bottom: 20px;
+}
+.div1{
+   display: grid;
+   grid-template-columns: 150px 150px 100px;
+   column-gap: 50px;
+row-gap: 20px;
+}
+.deletebtn{
+    background-color:rgb(207, 41, 15);
+    color: white;
+    padding-left: 30px;
+    padding-right: 35px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
